@@ -12,6 +12,18 @@ Production-oriented data pipeline designed to reconcile sales data from multiple
 - ELT Pipelines
 - Analytical Reporting
 
+## Architecture
+
+flowchart LR
+    A[CRM / POS Source 1] --> C[Raw Data Layer]
+    B[CRM / POS Source 2] --> C[Raw Data Layer]
+
+    C --> D[Data Profiling]
+    D --> E[Transformation Layer]
+    E --> F[Validation & Reconciliation]
+    F --> G[Unified Sales Dataset]
+    G --> H[Analytics-Ready Outputs]
+
 ## Business Context
 
 The Marketing and Strategy & Planning (S&P) teams were reporting different sales numbers for the same period. After investigation, it was discovered that sales data originated from two independent CRM vendors and had never been consolidated into a unified source of truth.
