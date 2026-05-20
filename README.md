@@ -1,4 +1,16 @@
-# DiDi Data Engineer Real-time Exercise
+# Production-Grade Sales Data Pipeline
+
+Production-oriented data pipeline designed to reconcile sales data from multiple CRM/POS sources, validate data quality, and generate analytics-ready outputs using Python, SQL, and SQLite.
+
+## Tech Stack
+
+- Python
+- SQL
+- SQLite
+- Pandas
+- Data Validation & Reconciliation
+- ELT Pipelines
+- Analytical Reporting
 
 ## Business Context
 
@@ -57,9 +69,10 @@ didi_etl_exercise/
 │   └── validation_summary.csv
 │
 ├── sql/
-│   ├── 01_profiling.sql
-│   ├── 02_transform.sql
-│   └── 03_validation.sql
+├── 01_profiling.sql
+├── 02_transform.sql
+├── 03_validation.sql
+├── 04_serving_layer.sql
 │
 ├── didi_sales.db
 ├── run_etl.py
@@ -189,3 +202,23 @@ The exercise successfully consolidated fragmented CRM data into a unified analyt
 ## Additional Enhancements
 
 - Added ingestion_timestamp for traceability and future incremental loading support.
+
+## How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/torojacobo/production-grade-sales-data-pipeline.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the pipeline:
+
+```bash
+python run_etl.py
+```
