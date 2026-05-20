@@ -201,6 +201,24 @@ For production-grade implementation, the following improvements could be added:
 
 ---
 
+## Pipeline Capabilities
+
+This pipeline simulates a production-oriented sales reconciliation workflow designed to unify and validate transactional data from multiple CRM/POS systems.
+
+Core capabilities include:
+
+- Multi-source sales data ingestion
+- Schema consistency checks
+- Data profiling and quality validation
+- Transformation into a unified analytical layer
+- Sales reconciliation across systems
+- Analytics-ready reporting outputs
+- Structured SQL-based transformation workflow
+
+The project was designed to emulate real-world enterprise data engineering and analytics engineering practices commonly used in financial and operational reporting environments.
+
+---
+
 # Key Engineering Decisions
 
 - SQLite was selected as a lightweight relational engine for rapid local execution.
@@ -214,6 +232,15 @@ For production-grade implementation, the following improvements could be added:
 # Final Outcome
 
 The exercise successfully consolidated fragmented CRM data into a unified analytics-ready sales dataset while maintaining data lineage, reproducibility and validation controls.
+
+## Outputs
+
+The pipeline generates:
+
+- Unified sales datasets
+- Validation summaries
+- Analytics-ready reporting tables
+- Reconciliation outputs for downstream analysis
 
 ## Additional Enhancements
 
