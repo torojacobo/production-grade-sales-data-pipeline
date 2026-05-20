@@ -199,6 +199,9 @@ For production-grade implementation, the following improvements could be added:
 - observability and alerting
 - incremental loading strategies
 
+## Project Design
+
+The project was structured to be fully reproducible using relative paths and modular SQL transformations, allowing the pipeline to run consistently across different local environments.
 ---
 
 ## Pipeline Capabilities
